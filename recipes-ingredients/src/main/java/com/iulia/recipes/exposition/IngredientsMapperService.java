@@ -1,7 +1,10 @@
 package com.iulia.recipes.exposition;
 
+import org.springframework.stereotype.Service;
+
 import com.iulia.recipes.domain.Ingredient;
 
+@Service
 public class IngredientsMapperService {
 
 	public IngredientsDto mapFromDomain(Ingredient bean) {

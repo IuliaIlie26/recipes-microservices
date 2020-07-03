@@ -1,5 +1,7 @@
 package com.iulia.recipes.application;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.iulia.recipes.domain.Ingredient;
@@ -16,6 +18,10 @@ public class CrudIngredientService {
 
 	public void save(Ingredient ingredient) {
 		ingredientsDomainRepository.save(ingredient);
+	}
+
+	public List<String> getAllDb() {
+		return ingredientsDomainRepository.getAllDb();
 	}
 
 }
